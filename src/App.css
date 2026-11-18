@@ -310,3 +310,18 @@ html,body,#root,.site-shell{width:100%;max-width:100%;min-width:320px;overflow-x
 
 @media(max-width:760px){.character-carousel .portrait{width:min(50vw,210px);height:clamp(225px,37svh,310px)}}
 @media(max-width:420px){.character-carousel .portrait{width:min(50vw,185px);height:clamp(215px,36svh,280px)}}
+
+/* Reduce only tablet-sized viewport filler; keep the existing visual layout. */
+@media(min-width:651px) and (max-width:1100px){
+  .hero-section .game-stage{min-height:620px!important;padding-block:34px!important;justify-content:center}
+  .story-section,.story-card{min-height:0!important}
+  .story-section{padding-block:42px!important}
+  .story-card{padding-block:42px!important}
+  .gems-section{min-height:0!important;justify-content:flex-start;padding-block:56px!important}
+  .gems-section .section-heading{margin-bottom:26px}
+  .characters-section{height:auto!important;min-height:0!important;padding-block:0!important}
+  .character-layout{height:auto!important;min-height:0!important;padding-block:34px!important}
+  .character-carousel{height:clamp(450px,46vh,560px)!important;min-height:0!important}
+  .learning-section{min-height:0!important;padding-block:64px!important}
+  .memory-section{min-height:0!important;padding-block:64px!important}
+}
